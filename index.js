@@ -89,7 +89,7 @@ function init() {
 
     console.log(`
     ***********************
-    Welcome to the Personal 
+    Welcome to the Personal
     Slate ReadMe Generator!
     ***********************
     `);
