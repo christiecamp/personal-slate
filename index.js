@@ -79,7 +79,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile('./dist/README.md', filename, data, (err) => {
+    fs.writeFile(filename, data, (err) => {
     err ? console.log(err) : console.log('Readme Generated! Check it out in the dist folder!');
 });
 };
@@ -94,8 +94,11 @@ function init() {
     ***********************
     `);
 
-
-}
-
+    inquirer.promt(questions)
+    .then(readmeData => {
+        writeToFile("./dist/README.md", generateMarkdown(readmeData))
+    });
+};
+        
 // Function call to initialize app
 init();
