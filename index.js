@@ -23,7 +23,7 @@ const questions = [
 {
     type: 'input',
     name: 'description',
-    message: 'Provide a short description explaining the what, why, and how of your project.',
+    message: 'Provide a short description explaining the what, why, and how of your project:',
 },
 
 //project installation
@@ -51,13 +51,19 @@ const questions = [
 {
     type: 'list',
     name: 'license',
-    message: 'What license did you use?',
+    message: 'What license does your project have?',
+    choices: [
+        'MIT',
+        'Apache',
+        'GPL',
+        'None',
+    ],
 },
 
 //project contributions
 {
     type: 'input',
-    name: 'contributing',
+    name: 'contribution',
     message: 'List your collaborators, if any, with links to their GitHub profiles:',
 },
 
@@ -80,7 +86,8 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(filename, data, (err) => {
-    err ? console.log(err) : console.log('Readme Generated! Check it out in the dist folder!');
+    if (err) throw new Error(err);
+    console.log('Readme Generated! Check it out in the dist folder!');
 });
 };
 
