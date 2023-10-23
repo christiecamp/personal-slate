@@ -4,7 +4,7 @@
 function renderLicenseBadge(license) {
   license !== "no license"
   ? console.log(`
-  [![badge](https://img.shields.io/badge/license-${license})
+  [![badge](https://img.shields.io/badge/license-${license}-blue)
   `)
   : console.log(`
   'no license'
@@ -26,18 +26,20 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-//section
+//license link within section in
 function renderLicenseSection(license) {
-license !== 'no license'
-return `
-
-`;
+  license !== "no license"
+  ?  `
+  ## [License]
+  ${renderLicenseLink(license)}
+  `
+  : console.log ('');
 };
 
 //section for demo
-function renderDemo (demo) {
+// function renderDemo (demo) {
 
-}
+// };
 
 
 // TODO: Create a function to generate markdown for README
@@ -60,7 +62,7 @@ function generateMarkdown(info) {
   ## Description
   ${info.description}
   ${renderLicenseSection(info.license)} 
-  ${renderLicenseLink(info.license)}
+
   
 ## Installation 
   ${info.installation}
@@ -68,7 +70,6 @@ function generateMarkdown(info) {
 ## Usage 
   ${info.usage}
   ${info.screenshot}
-  ${renderDemo(demo)}
 
 ## Contribution
   ${info.contribution}
@@ -77,7 +78,7 @@ function generateMarkdown(info) {
   ${info.testing}
 
 ## Questions
-   Questions? Reach out to me at [${info.github}](https://github.com/${github}) or ${info.email}!
+   Questions? Reach out to me at [${info.github}](https://github.com/${info.github}) or ${info.email}!
 
 `;
 };
