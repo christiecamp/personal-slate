@@ -3,10 +3,9 @@
 
 //badge
 function renderLicenseBadge(license) {
-  let badge = license.replace("");
-  return `
-  
-  `
+  if (license) {
+    return ``
+  }
 };
 
 // TODO: Create a function that returns the license link
@@ -26,8 +25,8 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 
 function generateMarkdown(data) {
- 
- 
+
+const {info, github} = data;
  
  
 //README format
@@ -35,21 +34,23 @@ function generateMarkdown(data) {
   return `
   # ${info.title}
 
+  ${renderLicenseBadge(data.license)}
+
 ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
+  ${renderLicenseBadge(data.license)}
   - [Contribution](#contribution)
   - [Testing](#tests)
   - [Questions](#questions)
 
 
-## Project Description
+  ## Description
   ${info.description}
   ${renderLicenseSection()} 
   ${renderLinkSection()}
   
-
 ## Installation 
   ${info.installation}
 

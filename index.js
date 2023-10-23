@@ -47,6 +47,13 @@ const questions = [
     message: 'Include screenshots as needed:',
 },
 
+//live demo
+{
+    type: 'input',
+    name: 'demo',
+    message: 'Provide link to live demo:',
+},
+
 //license list
 {
     type: 'list',
@@ -77,15 +84,20 @@ const questions = [
 //github - questions
 {
     type: 'input',
-    name: 'questions',
-    message: '',//add Questions? Reach out to me at @GitHub profile
+    name: 'github',
+    message: 'Enter GitHub Username:',//add Questions? Reach out to me at @GitHub profile
+},
+{
+    type: 'input',
+    name: 'email',
+    message: 'Enter an email users can reach you at:',//add Questions? Reach out to me at @GitHub profile
 },
 
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(filename, data, (err) => {
+    fs.writeFile(fileName, data, (err) => {
     if (err) throw new Error(err);
     console.log('Readme Generated! Check it out in the dist folder!');
 });
