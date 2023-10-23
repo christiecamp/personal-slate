@@ -2,38 +2,40 @@
 // If there is no license, return an empty string
 //badge - link found through google search
 function renderLicenseBadge(license) {
-  license !== "no license"
-  ? console.log(`
-  [![badge](https://img.shields.io/badge/license-${license}-blue)
-  `)
-  : console.log(`
-  'no license'
-  `);
+  if (license !== "no license") {
+  return `
+  ![badge](https://img.shields.io/badge/${license}-pink)
+  `}
+  else {
+  return 'no license'
+  };
 };
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 //link for license - found free online source from google search
 function renderLicenseLink(license) {
-  license !== "no license"
-  ? console.log(`
-  [${license}(https://choosealicense.com/licenses/${license})]
-  `)
-  : console.log(`
-  'no license'
-  `);
+  if (license !== "no license") {
+  return `
+  https://choosealicense.com/licenses/${license}
+  `}
+  else {
+  return 'no license'
+  };
 };
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 //license link within section in
 function renderLicenseSection(license) {
-  license !== "no license"
-  ?  `
-  ## [License]
+  if (license !== "no license") {
+  return `
+  ## License
   ${renderLicenseLink(license)}
-  `
-  : console.log ('');
+  `}
+  else {
+  return ""
+  };
 };
 
 //section for demo

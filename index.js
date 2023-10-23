@@ -60,9 +60,9 @@ const questions = [
     name: 'license',
     message: 'What license does your project have?',
     choices: [
-        'MIT',
-        'Apache',
-        'Unlicense',
+        'mit',
+        'apache-2.0',
+        'bsl-1.0',
         'no license',
     ],
 },
