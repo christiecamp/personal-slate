@@ -62,8 +62,8 @@ const questions = [
     choices: [
         'MIT',
         'Apache',
-        'GPL',
-        'None',
+        'Unlicense',
+        'no license',
     ],
 },
 
@@ -77,7 +77,7 @@ const questions = [
 //project testing
 {
     type: 'input',
-    name: 'tests',
+    name: 'testing',
     message: 'Go the extra mile and write tests for your application:',
 },
 
