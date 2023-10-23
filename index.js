@@ -113,7 +113,7 @@ function init() {
     ***********************
     `);
 
-    inquirer.promt(email)
+    inquirer.promt(questions)
     .then(readmeInfo => {
         writeToFile("./dist/README.md", generateMarkdown(readmeInfo))
     });
