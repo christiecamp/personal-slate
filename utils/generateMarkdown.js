@@ -59,9 +59,9 @@ function generateMarkdown(info) {
   - [Questions](#questions)
 
 
-  ## Description
-  ${info.description}
-  ${renderLicenseSection(info.license)} 
+## Description
+${info.description}
+${renderLicenseSection(info.license)} 
 
   
 ## Installation 
