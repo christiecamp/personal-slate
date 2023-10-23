@@ -71,7 +71,7 @@ const questions = [
 {
     type: 'input',
     name: 'contribution',
-    message: 'List your collaborators, if any, with links to their GitHub profiles:',
+    message: 'List your collaborators:',
 },
 
 //project testing
@@ -96,8 +96,8 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => {
+function writeToFile(fileName, info) {
+    fs.writeFile(fileName, info, (err) => {
     if (err) throw new Error(err);
     console.log('Readme Generated! Check it out in the dist folder!');
 });
@@ -114,8 +114,8 @@ function init() {
     `);
 
     inquirer.promt(questions)
-    .then(readmeData => {
-        writeToFile("./dist/README.md", generateMarkdown(readmeData))
+    .then(readmeInfo => {
+        writeToFile("./dist/README.md", generateMarkdown(readmeInfo))
     });
 };
         
