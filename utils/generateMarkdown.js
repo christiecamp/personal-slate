@@ -58,7 +58,7 @@ function renderDemo(demo) {
 if (demo !== "no demo") {
   return `
 ### Demo
- ![demo[(../assets/)
+ ![demo](../assets/)
   `}
   else {
   return ""
@@ -90,10 +90,7 @@ function generateMarkdown(info) {
 
 ## Usage 
   ${info.usage}
-  
   ${renderScreenShot(info.screenshot)}
-
-
   ${renderDemo(info.demo)}
 
 ## Contribution
