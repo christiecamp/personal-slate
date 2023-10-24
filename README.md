@@ -2,6 +2,8 @@
 
 # Professional README Generator
 
+![badmath](https://img.shields.io/badge/mit-hotpink)
+
 ## ![table-of-contents](./assets/branding/toc.png)
 
   - [OVERVIEW](#description)
@@ -40,6 +42,14 @@ The application was invoked using the following commands:
 - npm i inquirer@8.2.4 --start -dev
 
 ## ![usage](./assets/branding/3.png)
+
+**INSTRUCTIONS:**
+
+1. Open the Integrated Terminal and input - node index.
+2. Enter the title of your project.
+3. Enter a short description for your project.
+4. List the steps required to install your project.
+5. List any examples for 
 
 ### ![screenshot](./assets/branding/7.png)
 
