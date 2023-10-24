@@ -12,8 +12,8 @@
   - [USAGE](#usage)
     - [screenshot](#screenshot)
     - [demo](#demo)
-
   - [SOURCES](#sources)
+  - [LICENSE](#license)
   - [LINKS](#links)
   - [CONNECT](#connect)
  
@@ -23,8 +23,10 @@
 Create a command-line application that dynamically generates a professional **README.md** file from a user's input using the [Inquirer package]((https://www.npmjs.com/package/inquirer/v/8.2.4)).
 
 ### ![user-story](./assets/branding/10.png)
+![user-story](./assets/branding/user-story.png)
 
 ### ![acceptance-criteria](./assets/branding/11.png)
+![acceptance-criteria0](./assets/branding/acceptance-criteria.png)
 
 
 
@@ -54,6 +56,11 @@ Here's a list of technologies used:
 2. [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) - a reminder of everything that a high-quality, professional README should contain.
 
 3. [Node.js]() - is an open-source, cross-platform JavaScript runtime environment.
+
+4. [Fullstack Blog Video Submission Guide](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide) - for additional guidance on creating a video.
+
+## ![license](./assets/branding/9.png)
+
 
 
 ## ![links](./assets/branding/13.png)
