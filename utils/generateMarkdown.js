@@ -33,7 +33,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== "no license") {
   return `
-  ### License
+  ### ![license](../assets/branding/9.png)
   ${renderLicenseLink(license)}
   `}
   else {
@@ -45,7 +45,7 @@ function renderLicenseSection(license) {
 function renderScreenShot(screenshot) {
   if (screenshot !== "no screenshot") {
     return `
-### Screenshot
+### ![screenshot](../assets/branding/7.png)
    ![screenshot](../assets/screenshot.png)
     `}
     else {
@@ -57,7 +57,7 @@ function renderScreenShot(screenshot) {
 function renderDemo(demo) {
 if (demo !== "no demo") {
   return `
-### Demo
+### ![demo](../assets/branding/8.png)
  ![demo](../assets/)
   `}
   else {
@@ -70,40 +70,40 @@ function generateMarkdown(info) {
 //README format
   return `
 
-![banner](../assets/branding/readme-banner.png)
+![banner](../assets/branding/banner.png)
 
 # ${info.title}
 
   ${renderLicenseBadge(info.license)}
 
-## ![table-of-contents](../assets/branding/2.png)
+## ![table-of-contents](../assets/branding/toc.png)
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
   - [Contribution](#contribution)
   - [Testing](#tests)
-  - [Questions](#questions)
+  - [Connect](#connect)
 
-## ![description](../assets/branding/3.png)
+## ![description](../assets/branding/1.png)
   ${info.description}
-  ${renderLicenseSection(info.license)} 
+ ${renderLicenseSection(info.license)}
   
-## ![installation](../assets/branding/4.png)
+## ![installation](../assets/branding/2.png)
   ${info.installation}
 
-## ![usage](../assets/branding/5.png)
+## ![usage](../assets/branding/3.png)
   ${info.usage}
   ${renderScreenShot(info.screenshot)}
   ${renderDemo(info.demo)}
 
-## ![contribution](../assets/branding/6.png)
+## ![contribution](../assets/branding/4.png)
   ${info.contribution}
 
-## Testing
+## ![contribution](../assets/branding/5.png)
   ${info.testing}
 
-## Questions
-   Questions? Reach out to me at:</br>
+## ![connect](../assets/branding/6.png)
+   Questions? Connect with me at:</br>
    GiHub: [${info.github}](https://github.com/${info.github})</br>
    Email: ${info.email}!</br>
    <a href="https://www.christiecamp.com"><img height="150px" src ="../assets/branding/cc.png"></a>
