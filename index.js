@@ -105,7 +105,7 @@ function writeToFile(fileName, info) {
 
 // TODO: Create a function to initialize app
 function init() {
-
+    //beginning message to generator
     console.log(`
     ***********************
     Welcome to the Personal
