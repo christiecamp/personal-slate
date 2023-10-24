@@ -1,25 +1,29 @@
-![portfolio demo](./assets/branding/readme-banner.png)
+![banner](./assets/branding/banner.png)
 
 # Professional README Generator
 
-## Meet the Developer
+## Table of Contents
 
-
-
+  - [OVERVIEW](#description)
+    - [User Story](#userstory)
+    - [Acceptance Criteria](#criteria)
+    - [Project To-Do's](#todo)
+  - [INSTALLATION](#installation)
+  - [DEMO](#demo)
+  - [SOURCES](#sources)
+  - [LINKS](#links)
+  - [CONNECT](#connect)
+ 
 
 ## Project Overview
 
-We have been tasked to utilize the knowledge we have obtained over the past six weeks to create a real-world front-end application that we will showcase to potential employers.
-
-## UX Design
-
-Our website was designed with the user in mind - mimicking the same enviorment we wish for the user to love; a night-in at home.
-
-The open design, although a first iteration, helps the user seamlessly pick their night-in line-up. The dark theme and flourescent composition imitate the bustling night-life, without compromising the cozy mood. 
+I have been tasked to create a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package]
 
 ### User Story
 
 ![portfolio demo](./build/assets/img/user-story.png)
+
+### Acceptance Criteria
 
 
 ## Concept Design Presentation
@@ -27,12 +31,8 @@ The open design, although a first iteration, helps the user seamlessly pick thei
 ![portfolio demo](./build/assets/img/concept-design.png)
 
 
-## User Flow
 
-![user flow](./build/assets/img/user-flow.png)
-
-
-## DEMO
+## Demo Walkthrough
 
 ![portfolio demo](./build/assets/img/demo.png)
 
@@ -54,12 +54,67 @@ Here's a list of technologies used:
 
 7. Render - Deployed static application through render to deploy from  ./build/index.html
 
+
 ### Deployed Links
 
 1. [GitHub Repository](https://github.com/christiecamp/night-in-lineup)
 
 2. [Deployed Link on render](https://nightin-lineup.onrender.com)
 
+3. [Video Walkthrough]()
 
+
+
+<!-- 
+![banner](../assets/branding/banner.png)
+
+# title
+
+  
+  ![badge](https://img.shields.io/badge/mit-hotpink)
+  
+
+## ![table-of-contents](../assets/branding/toc.png)
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contribution](#contribution)
+  - [Testing](#testing)
+  - [Connect](#connect)
+
+## ![description](../assets/branding/1.png)
+  test
+ 
+  ### ![license](../assets/branding/9.png)
+  
+  https://choosealicense.com/licenses/mit
+  
+  
+  
+## ![installation](../assets/branding/2.png)
+  test
+
+## ![usage](../assets/branding/3.png)
+  test
+  
+### ![screenshot](../assets/branding/7.png)
+   ![screenshot](../assets/screenshot.png)
+    
+  
+### ![demo](../assets/branding/8.png)
+ ![demo](../assets/)
+  
+
+## ![contribution](../assets/branding/4.png)
+  test
+
+## ![testing](../assets/branding/5.png)
+  test
+
+## ![connect](../assets/branding/6.png)
+   Questions? Connect with me at:</br>
+   GiHub: [christiecamp](https://github.com/christiecamp)</br>
+   Email: christiecamphoto@gmail.com!</br>
+   <a href="https://www.christiecamp.com"><img height="150px" src ="../assets/branding/cc.png"></a> -->
 
 
