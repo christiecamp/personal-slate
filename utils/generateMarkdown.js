@@ -5,7 +5,7 @@
 function renderLicenseBadge(license) {
   if (license !== "no license") {
   return `
-  ![badge](https://img.shields.io/badge/${license}-pink)
+  ![badge](https://img.shields.io/badge/${license}-hotpink)
   `}
   else {
   return 'no license'
@@ -70,11 +70,13 @@ function generateMarkdown(info) {
 //README format
   return `
 
+![banner](../assets/branding/readme-banner.png)
+
 # ${info.title}
 
   ${renderLicenseBadge(info.license)}
 
-## Table of Contents
+## ![table-of-contents](../assets/branding/2.png)
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
@@ -82,27 +84,29 @@ function generateMarkdown(info) {
   - [Testing](#tests)
   - [Questions](#questions)
 
-## Description
+## ![description](../assets/branding/3.png)
   ${info.description}
   ${renderLicenseSection(info.license)} 
   
-## Installation 
+## ![installation](../assets/branding/4.png)
   ${info.installation}
 
-## Usage 
+## ![usage](../assets/branding/5.png)
   ${info.usage}
   ${renderScreenShot(info.screenshot)}
   ${renderDemo(info.demo)}
 
-## Contribution
+## ![contribution](../assets/branding/6.png)
   ${info.contribution}
 
 ## Testing
   ${info.testing}
 
 ## Questions
-   Questions? Reach out to me at [${info.github}](https://github.com/${info.github}) or ${info.email}!
-
+   Questions? Reach out to me at:</br>
+   GiHub: [${info.github}](https://github.com/${info.github})</br>
+   Email: ${info.email}!</br>
+   <a href="https://www.christiecamp.com"><img height="150px" src ="../assets/branding/cc.png"></a>
 `;
 };
 
