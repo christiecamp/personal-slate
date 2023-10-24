@@ -20,7 +20,9 @@
 
 ## ![description](./assets/branding/1.png)
 
-Create a command-line application that dynamically generates a professional **README.md** file from a user's input using the [Inquirer package]((https://www.npmjs.com/package/inquirer/v/8.2.4)).
+The Personal Slate README Generator creates README files by using command-line applications to generate!
+
+This application dynamically generates a professional **README.md** file from a user’s input using the [Inquirer package]((https://www.npmjs.com/package/inquirer/v/8.2.4)).
 
 ### ![user-story](./assets/branding/10.png)
 ![user-story](./assets/branding/user-story.png)
@@ -61,7 +63,7 @@ Here's a list of technologies used:
 
 ## ![license](./assets/branding/9.png)
 
-
+[MIT License](./LICENSE)
 
 ## ![links](./assets/branding/13.png)
 
@@ -77,7 +79,3 @@ Here's a list of technologies used:
    GiHub: [christiecamp](https://github.com/christiecamp)</br>
    Email: christiecamphoto@gmail.com</br>
    <a href="https://www.christiecamp.com"><img height="150px" src ="./assets/branding/cc.png"></a>
-
-
-
-
