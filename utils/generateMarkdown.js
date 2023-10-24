@@ -1,5 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
+
 //badge - link found through google search
 function renderLicenseBadge(license) {
   if (license !== "no license") {
@@ -13,6 +14,7 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
+
 //link for license - found free online source from google search
 function renderLicenseLink(license) {
   if (license !== "no license") {
@@ -26,6 +28,7 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
+
 //license section and link added within readdme
 function renderLicenseSection(license) {
   if (license !== "no license") {
@@ -38,12 +41,24 @@ function renderLicenseSection(license) {
   };
 };
 
+//section for screenshot
+function renderScreenShot(screenshot) {
+  if (screenshot !== "no screenshot") {
+    return `
+### Screenshot
+   ![screenshot](../assets/screenshot.png)
+    `}
+    else {
+    return ""
+    };
+  };
+
 //section for demo
-function renderDemo (demo) {
+function renderDemo(demo) {
 if (demo !== "no demo") {
   return `
-  ### Demo
- ![demo]()
+### Demo
+ ![demo[(../assets/)
   `}
   else {
   return ""
@@ -75,7 +90,10 @@ function generateMarkdown(info) {
 
 ## Usage 
   ${info.usage}
-  ${info.screenshot}
+  
+  ${renderScreenShot(info.screenshot)}
+
+
   ${renderDemo(info.demo)}
 
 ## Contribution

@@ -12,50 +12,54 @@ const generateMarkdown = require('./utils/generateMarkdown');
 //array of questions for the user
 const questions = [
 
-//project title
-{
+    //project title
+    {
     type: 'input',
     name: 'title',
     message: 'What is the title of your project?',
-},
+    },
 
-//project description
-{
+    //project description
+    {
     type: 'input',
     name: 'description',
     message: 'Provide a short description explaining the what, why, and how of your project:',
-},
+    },
 
-//project installation
-{
+    //project installation
+    {
     type: 'input',
     name: 'installation',
     message: 'What are the steps required to install your project?',
-},
+    },
 
-//project usage
-{
+    //project usage
+    {
     type: 'input',
     name: 'usage',
     message: 'Provide instructions and examples for use.',
-},
+    },
 
-//usage screenshot
-{
-    type: 'input',
+    //usage screenshot
+    {
+    type: 'list',
     name: 'screenshot',
-    message: 'Include screenshots as needed:',
-},
+    message: 'Is a screenshot provided?',
+    choices: [
+        'yes',
+        'no',
+        ],
+    },
 
-//live demo
-{
+    //live demo
+    {
     type: 'input',
     name: 'demo',
     message: 'Provide link to live demo:',
-},
+    },
 
-//license list
-{
+    //license list
+    {
     type: 'list',
     name: 'license',
     message: 'What license does your project have?',
@@ -64,35 +68,36 @@ const questions = [
         'apache-2.0',
         'bsl-1.0',
         'no license',
-    ],
-},
+        ],
+    },
 
-//project contributions
-{
+    //project contributions
+    {
     type: 'input',
     name: 'contribution',
     message: 'List your collaborators:',
-},
+    },
 
-//project testing
-{
+    //project testing
+    {
     type: 'input',
     name: 'testing',
     message: 'Go the extra mile and write tests for your application:',
-},
+    },
 
-//github - questions
-{
+    //github - questions
+    {
     type: 'input',
     name: 'github',
-    message: 'Enter GitHub Username:',//add Questions? Reach out to me at @GitHub profile
-},
-{
+    message: 'Enter GitHub Username:',
+    },
+
+    //email - questions
+    {
     type: 'input',
     name: 'email',
-    message: 'Enter an email users can reach you at:',//add Questions? Reach out to me at @GitHub profile
-},
-
+    message: 'Enter an email users can reach you at:',
+    },
 ];
 
 // TODO: Create a function to write README file
@@ -100,11 +105,12 @@ function writeToFile(fileName, info) {
     fs.writeFile(fileName, info, (err) => {
     if (err) throw new Error(err);
     console.log('Readme Generated! Check it out in the dist folder!');
-});
+    });
 };
 
 // TODO: Create a function to initialize app
 function init() {
+
     //beginning message to generator
     console.log(`
     ***********************
