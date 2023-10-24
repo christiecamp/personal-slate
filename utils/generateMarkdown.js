@@ -55,15 +55,27 @@ function renderScreenShot(screenshot) {
 
 //section for demo
 function renderDemo(demo) {
-if (demo !== "no demo") {
-  return `
+  if (demo !== "no demo") {
+    return `
 ### ![demo](../assets/branding/8.png)
  ![demo](../assets/)
-  `}
-  else {
-  return ""
+    `}
+    else {
+    return ""
+    };
   };
-};
+
+  //section for testing
+function renderTest(testing) {
+  if (testing !== "no test") {
+    return `
+## ![testing](../assets/branding/5.png)
+ ![testing](':heavy_check_mark:')
+    `}
+    else {
+    return ""
+    };
+  };
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(info) {
@@ -99,8 +111,7 @@ function generateMarkdown(info) {
 ## ![contribution](../assets/branding/4.png)
   ${info.contribution}
 
-## ![testing](../assets/branding/5.png)
-  ${info.testing}
+  ${renderTest(info.testing)}
 
 ## ![connect](../assets/branding/6.png)
    Questions? Connect with me at:</br>

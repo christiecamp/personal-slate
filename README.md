@@ -49,7 +49,10 @@ The application was invoked using the following commands:
 2. Enter the title of your project.
 3. Enter a short description for your project.
 4. List the steps required to install your project.
-5. List any examples for 
+5. Explain the project's usage, and provide any screenshot or demo of functionality.
+6. List Contributors
+7. Add any tests used
+8. Add your GitHub and email address
 
 ### ![screenshot](./assets/branding/7.png)
 

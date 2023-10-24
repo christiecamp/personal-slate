@@ -53,9 +53,13 @@ const questions = [
 
     //live demo
     {
-    type: 'input',
+    type: 'list',
     name: 'demo',
-    message: 'Provide link to live demo:',
+    message: 'Is a demo provided?',
+    choices: [
+        'yes',
+        'no',
+        ],
     },
 
     //license list
@@ -80,9 +84,13 @@ const questions = [
 
     //project testing
     {
-    type: 'input',
+    type: 'list',
     name: 'testing',
-    message: 'Go the extra mile and write tests for your application:',
+    message: 'Did you go the extra mile and write tests for your application?',
+    choices: [
+        'yes',
+        'no',
+        ],
     },
 
     //github - questions
