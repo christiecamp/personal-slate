@@ -69,7 +69,8 @@ if (demo !== "no demo") {
 function generateMarkdown(info) {
 //README format
   return `
-  # ${info.title}
+
+# ${info.title}
 
   ${renderLicenseBadge(info.license)}
 
