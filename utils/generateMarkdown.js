@@ -81,7 +81,7 @@ function generateMarkdown(info) {
   - [Installation](#installation)
   - [Usage](#usage)
   - [Contribution](#contribution)
-  - [Testing](#tests)
+  - [Testing](#testing)
   - [Connect](#connect)
 
 ## ![description](../assets/branding/1.png)
@@ -99,7 +99,7 @@ function generateMarkdown(info) {
 ## ![contribution](../assets/branding/4.png)
   ${info.contribution}
 
-## ![contribution](../assets/branding/5.png)
+## ![testing](../assets/branding/5.png)
   ${info.testing}
 
 ## ![connect](../assets/branding/6.png)
