@@ -70,7 +70,7 @@ function renderTest(testing) {
   if (testing !== "no test") {
     return `
 ## ![testing](../assets/branding/5.png)
- ![testing](':heavy_check_mark:')
+ ![testing](../assets/branding/test.png)
     `}
     else {
     return ""
