@@ -5,7 +5,7 @@
 function renderLicenseBadge(license) {
   if (license !== "no license") {
     return `
-    ![badge](https://img.shields.io/badge/${license}-hotpink)
+![badge](https://img.shields.io/badge/${license}-hotpink)
   `}
   else {
     return 'no license'
@@ -19,7 +19,7 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if (license !== "no license") {
     return `
-    https://choosealicense.com/licenses/${license}
+https://choosealicense.com/licenses/${license}
   `}
   else {
       return 'no license'
