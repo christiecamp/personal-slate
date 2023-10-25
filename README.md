@@ -45,14 +45,15 @@ The application was invoked using the following commands:
 
 **INSTRUCTIONS:**
 
-1. Open the Integrated Terminal and input - node index.
+1. Open the Integrated Terminal and input - **node index**.
 2. Enter the title of your project.
 3. Enter a short description for your project.
 4. List the steps required to install your project.
 5. Explain the project's usage, and provide any screenshot or demo of functionality.
-6. List Contributors
-7. Add any tests used
-8. Add your GitHub and email address
+6. Pick the license used for your project.
+6. List the contributors for your project.
+7. List any testing, if used, for your project.
+8. Add your GitHub and email address.
 
 ### ![screenshot](./assets/branding/7.png)
 

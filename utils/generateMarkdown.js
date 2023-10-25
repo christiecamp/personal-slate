@@ -4,11 +4,11 @@
 //badge - link found through google search
 function renderLicenseBadge(license) {
   if (license !== "no license") {
-  return `
-  ![badge](https://img.shields.io/badge/${license}-hotpink)
+    return `
+    ![badge](https://img.shields.io/badge/${license}-hotpink)
   `}
   else {
-  return 'no license'
+    return 'no license'
   };
 };
 
@@ -18,11 +18,11 @@ function renderLicenseBadge(license) {
 //link for license - found free online source from google search
 function renderLicenseLink(license) {
   if (license !== "no license") {
-  return `
-  https://choosealicense.com/licenses/${license}
+    return `
+    https://choosealicense.com/licenses/${license}
   `}
   else {
-  return 'no license'
+      return 'no license'
   };
 };
 
@@ -32,12 +32,12 @@ function renderLicenseLink(license) {
 //license section and link added within readdme
 function renderLicenseSection(license) {
   if (license !== "no license") {
-  return `
-  ### ![license](../assets/branding/9.png)
-  ${renderLicenseLink(license)}
+    return `
+### ![license](../assets/branding/9.png)
+${renderLicenseLink(license)}
   `}
   else {
-  return ""
+    return ""
   };
 };
 
@@ -46,42 +46,42 @@ function renderScreenShot(screenshot) {
   if (screenshot !== "no screenshot") {
     return `
 ### ![screenshot](../assets/branding/7.png)
-   ![screenshot](../assets/screenshot.png)
-    `}
-    else {
+![screenshot](../assets/screenshot.png)
+  `}
+  else {
     return ""
-    };
   };
+};
 
 //section for demo
 function renderDemo(demo) {
   if (demo !== "no demo") {
     return `
 ### ![demo](../assets/branding/8.png)
- ![demo](../assets/)
+![demo](../assets/)
     `}
-    else {
+  else {
     return ""
-    };
   };
+};
 
-  //section for testing
+//section for testing
 function renderTest(testing) {
   if (testing !== "no test") {
     return `
 ## ![testing](../assets/branding/5.png)
- ![testing](../assets/branding/test.png)
+![testing](../assets/branding/test.png)
     `}
-    else {
+  else {
     return ""
-    };
   };
+};
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(info) {
-//README format
+// README format
   return `
-
+  
 ![banner](../assets/branding/banner.png)
 
 # ${info.title}

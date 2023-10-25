@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
 
-//required modules
+//required packages
 const inquirer = require('inquirer');
 const fs = require('fs');
 
@@ -14,97 +14,97 @@ const questions = [
 
     //project title
     {
-    type: 'input',
-    name: 'title',
-    message: 'What is the title of your project?',
+        type: 'input',
+        name: 'title',
+        message: 'What is the title of your project?',
     },
 
     //project description
     {
-    type: 'input',
-    name: 'description',
-    message: 'Provide a short description explaining the what, why, and how of your project:',
+        type: 'input',
+        name: 'description',
+        message: 'Provide a short description explaining the what, why, and how of your project:',
     },
 
     //project installation
     {
-    type: 'input',
-    name: 'installation',
-    message: 'What are the steps required to install your project?',
+        type: 'input',
+        name: 'installation',
+        message: 'What are the steps required to install your project?',
     },
 
     //project usage
     {
-    type: 'input',
-    name: 'usage',
-    message: 'Provide instructions and examples for use.',
+        type: 'input',
+        name: 'usage',
+        message: 'Provide instructions and examples for use.',
     },
 
     //usage screenshot
     {
-    type: 'list',
-    name: 'screenshot',
-    message: 'Is a screenshot provided?',
-    choices: [
-        'yes',
-        'no',
-        ],
+        type: 'list',
+        name: 'screenshot',
+        message: 'Is a screenshot provided?',
+        choices: [
+            'yes',
+            'no',
+            ],
     },
 
     //live demo
     {
-    type: 'list',
-    name: 'demo',
-    message: 'Is a demo provided?',
-    choices: [
-        'yes',
-        'no',
-        ],
+        type: 'list',
+        name: 'demo',
+        message: 'Is a demo provided?',
+        choices: [
+            'yes',
+            'no',
+            ],
     },
 
     //license list
     {
-    type: 'list',
-    name: 'license',
-    message: 'What license does your project have?',
-    choices: [
-        'mit',
-        'apache-2.0',
-        'bsl-1.0',
-        'no license',
-        ],
+        type: 'list',
+        name: 'license',
+        message: 'What license does your project have?',
+        choices: [
+            'mit',
+            'apache-2.0',
+            'bsl-1.0',
+            'no license',
+            ],
     },
 
     //project contributions
     {
-    type: 'input',
-    name: 'contribution',
-    message: 'List your collaborators:',
+        type: 'input',
+        name: 'contribution',
+        message: 'List your collaborators:',
     },
 
-    //project testing
+    //testing - will include actua testing in future development
     {
-    type: 'list',
-    name: 'testing',
-    message: 'Did you go the extra mile and write tests for your application?',
-    choices: [
-        'yes',
-        'no',
-        ],
+        type: 'list',
+        name: 'testing',
+        message: 'Did you go the extra mile and write tests for your application?',
+        choices: [
+            'yes',
+            'no',
+            ],
     },
 
     //github - questions
     {
-    type: 'input',
-    name: 'github',
-    message: 'Enter GitHub Username:',
+        type: 'input',
+        name: 'github',
+        message: 'Enter GitHub Username:',
     },
 
     //email - questions
     {
-    type: 'input',
-    name: 'email',
-    message: 'Enter an email users can reach you at:',
+        type: 'input',
+        name: 'email',
+        message: 'Enter an email users can reach you at:',
     },
 ];
 
@@ -112,14 +112,14 @@ const questions = [
 function writeToFile(fileName, info) {
     fs.writeFile(fileName, info, (err) => {
     if (err) throw new Error(err);
-    console.log('Readme Generated! Check it out in the dist folder!');
+    console.log('README Generated! Check it out in the dist folder!');
     });
 };
 
 // TODO: Create a function to initialize app
 function init() {
 
-    //beginning message to generator
+    //message displayed at start of prompt
     console.log(`
     ***********************
     Welcome to the Personal
