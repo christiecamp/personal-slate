@@ -129,7 +129,7 @@ function init() {
 
     inquirer.prompt(questions)
     .then(readmeInfo => {
-        writeToFile("./dist/sample.md", generateMarkdown(readmeInfo))
+        writeToFile("./sample/sample.md", generateMarkdown(readmeInfo))
     });
 };
         
