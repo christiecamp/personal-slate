@@ -62,6 +62,7 @@ The below screenshot demonstrates the command-line application and the resulting
 ![screenshot](./assets/screenshot.png)
 
 ### ![demo](./assets/branding/8.png)
+![demo](./assets/final-demo.gif)
 
 
 ## ![sources](./assets//branding/12.png)
@@ -85,7 +86,7 @@ Here's a list of technologies used:
 
 [Sample README](./dist/sample.md)
 
-[Video Walkthrough](https://nodejs.org/en/about)
+[Video Walkthrough](https://drive.google.com/file/d/1_VA5t7VvpzUj0oIMQRHFsPiwRT1zPF3Y/preview)
 
 
 ## ![connect](./assets/branding/6.png)
