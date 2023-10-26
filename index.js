@@ -112,7 +112,7 @@ const questions = [
 function writeToFile(fileName, info) {
     fs.writeFile(fileName, info, (err) => {
     if (err) throw new Error(err);
-    console.log('README Generated! Check it out in the dist folder!');
+    console.log('README Generated! Check it out in the sample folder!');
     });
 };
 
