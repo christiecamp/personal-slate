@@ -58,7 +58,7 @@ function renderDemo(demo) {
   if (demo !== "no demo") {
     return `
 ### ![demo](../assets/branding/8.png)
-![demo](../assets/)
+![demo](../assets/branding/sample.gif)
     `}
   else {
     return ""
